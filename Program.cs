@@ -17,7 +17,7 @@ namespace ConsoleApp5
             b= Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("сложение(1) или вычитание(2): ");
             dey = Convert.ToInt32(Console.ReadLine());
-            if (dey == 2)
+            if(dey == 2)
                 {
                 resultat = a - b;
                 Console.WriteLine("Результат: " + resultat);
@@ -25,10 +25,18 @@ namespace ConsoleApp5
 
             }
             else
-            resultat = a+b;
-            Console.WriteLine("Результат: "+ resultat);
-            Console.ReadKey();
+            {
+                resultat = a + b;
+                Console.WriteLine("Результат: " + resultat);
+                Console.ReadKey();
 
+            }
+            resultat = a * b;
+            Console.WriteLine("Результат: " + resultat);
+            Console.ReadKey();
+            resultat = a / b;
+            Console.WriteLine("Результат: " + resultat);
+            Console.ReadKey();
 
         }
     }
