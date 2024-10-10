@@ -10,32 +10,26 @@ namespace ConsoleApp5
     {
         static void Main(string[] args)
         {
-            int a, b, resultat,dey;
+            int a, b, resultatsum,resultdiv,resymn,resmin;
             Console.WriteLine("Введите первое число:");
             a= Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Введите второе число:");
             b= Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("сложение(1) или вычитание(2): ");
-            dey = Convert.ToInt32(Console.ReadLine());
-            if(dey == 2)
-                {
-                resultat = a - b;
-                Console.WriteLine("Результат: " + resultat);
-                Console.ReadKey();
 
-            }
-            else
-            {
-                resultat = a + b;
-                Console.WriteLine("Результат: " + resultat);
-                Console.ReadKey();
 
-            }
-            resultat = a * b;
-            Console.WriteLine("Результат: " + resultat);
+
+            resultatsum = a + b;
+            Console.WriteLine("Результат суммы: " + resultatsum);
             Console.ReadKey();
-            resultat = a / b;
-            Console.WriteLine("Результат: " + resultat);
+
+            resmin = a - b;
+            Console.WriteLine("Результат вычитания: " + resmin);
+            Console.ReadKey();
+            resymn = a * b;
+            Console.WriteLine("Результат умножения: " + resymn);
+            Console.ReadKey();
+            resultdiv = a / b;
+            Console.WriteLine("Результат деления: " + resultdiv);
             Console.ReadKey();
 
         }
